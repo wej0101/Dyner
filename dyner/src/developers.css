@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .header,
+  .footer {
+    border-bottom: 1px solid #ccc;
+    padding: 16px 0;
+  }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+  
+  
+  .nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .button-black {
+    background-color: black;
+    color: white;
+  }
+  
+  .button-black:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .button-outline {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .button-outline:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tag {
+    background: #eee;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+  
+  .tabs button {
+    padding: 10px 16px;
+    margin-right: 8px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .tabs .active {
+    background: black;
+    color: white;
+  }
+  
