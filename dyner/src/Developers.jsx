@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './developers.css';
 
-export default function App() {
+export default function Developers() {
   const [activeTab, setActiveTab] = useState("All");
 
   const developers = [
@@ -34,7 +34,7 @@ export default function App() {
         <nav className="nav-links">
           <a href="/">Projects</a>
           <a href="/">Developers</a>
-          <a href="/">How It Works</a>
+          <a href="/">Study</a>
         </nav>
       </header>
 
