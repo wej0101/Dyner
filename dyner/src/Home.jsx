@@ -13,11 +13,11 @@ export default function Home() {
           <nav className="nav">
             <Link to="/projects">Projects</Link>
             <Link to="/developers">Developers</Link>
-            <Link to="/how-it-works">How It Works</Link>
+            <Link to="/study">Study</Link>
           </nav>
           <div className="auth">
             <Link to="/sign-in" className="btn btn-outline">Sign In</Link>
-            <Link to="/sign-up" className="btn btn-black">Sign Up</Link>
+            <Link to="/sign-up" className="btn btn-green">Sign Up</Link>
           </div>
         </div>
       </header>
@@ -26,51 +26,51 @@ export default function Home() {
         <section className="hero">
           <div className="container hero-inner">
             <div className="hero-text">
-              <h1>Find the perfect team for your development project</h1>
+              <h1>함께 성장할 개발자를 찾고 있나요?</h1>
               <p>
-                Connect with skilled developers, designers, and project managers who share your vision and can help bring your ideas to life.
+                스터디부터 실전 프로젝트까지, 같은 목표를 가진 개발자들과 쉽고 빠르게 팀을 이루세요.
               </p>
               <div className="hero-buttons">
-                <Link to="/projects/create" className="btn btn-black">Post a Project →</Link>
-                <Link to="/developers" className="btn btn-outline">Find Developers</Link>
+                <Link to="/projects/create" className="btn btn-green">스터디/프로젝트 개설</Link>
+                <Link to="/developers" className="btn btn-outline">개발자 찾기</Link>
               </div>
             </div>
             <div className="hero-card">
-              <h3>Mobile App Development</h3>
-              <p>Looking for React Native developers and UI/UX designers for a fitness tracking app.</p>
+              <h3>모바일 앱 개발자</h3>
+              <p>피트니스 트래킹 앱을 위한 리액트 네이티브 개발자와 UI/UX 디자이너를 찾고 있습니다.</p>
               <div className="tags">
                 <span>React Native</span>
                 <span>UI/UX Design</span>
                 <span>Mobile</span>
               </div>
-              <Link to="/projects/1" className="btn btn-outline small">View Details</Link>
+              <Link to="/projects/1" className="btn btn-outline small">자세히 보기</Link>
             </div>
           </div>
         </section>
 
         <section className="how-it-works">
           <div className="container">
-            <h2>How Dyner Works</h2>
+            <h2>Dyner는 어떻게 이용하나요?</h2>
             <p className="section-desc">
-              Our platform makes it easy to find the right people for your development projects or join exciting teams.
+              Dyner는 개발 프로젝트에 필요한 인재를 쉽게 찾고, 유망한 팀에 합류할 수 있는 플랫폼입니다.
             </p>
             <div className="features">
               <div className="feature-card">
-                <h3>Post Your Project</h3>
+                <h3>스터디/프로젝트 개설</h3>
                 <p>
-                  Describe your project, required skills, timeline, and compensation. Reach developers who match your needs.
+                  스터디/프로젝트 정보와 필요 기술, 일정을 입력하면 적합한 개발자에게 추천됩니다.
                 </p>
               </div>
               <div className="feature-card">
-                <h3>Connect with Talent</h3>
+                <h3>개발자 찾기</h3>
                 <p>
-                  Browse profiles, review portfolios, and connect with developers who have the skills you need.
+                  개발자 프로필과 포트폴리오를 확인하고, 필요한 기술을 가진 인재와 연결하세요.
                 </p>
               </div>
               <div className="feature-card">
-                <h3>Build Together</h3>
+                <h3>함께 성장하기</h3>
                 <p>
-                  Collaborate effectively with tools and resources designed to help your team succeed.
+                  함께 만들고, 함께 배우며, 함께 성장하세요.
                 </p>
               </div>
             </div>
@@ -79,21 +79,23 @@ export default function Home() {
 
         <section className="featured-devs">
           <div className="container">
-            <h2>Featured Developers</h2>
+            <h2>Dyner Developers</h2>
             <p className="section-desc">
-              Connect with talented developers ready to join your next project.
+              프로젝트/스터디 그룹원 매칭 플랫폼 Dyner를 제작해주신 개발자분들을 소개합니다.
             </p>
             <div className="dev-cards">
-              {[1, 2, 3].map((id) => (
+              {[1, 2, 3, 4].map((id) => (
                 <div key={id} className="dev-card">
                   <div className="avatar">{`Dev ${id}`}</div>
                   <h3>Developer {id}</h3>
                   <p className="desc">
                     {id === 1
-                      ? "Full Stack Developer with 5 years of experience in React, Node.js, and AWS."
+                      ? "설명"
                       : id === 2
-                      ? "UI/UX Designer specializing in mobile interfaces and user research."
-                      : "Backend Developer with expertise in Python, Django, and database optimization."}
+                      ? "설명"
+                      : id === 3
+                      ? "설명"
+                      :"설명"}
                   </p>
                   <div className="tags">
                     {id === 1 ? (
@@ -104,9 +106,13 @@ export default function Home() {
                       <>
                         <span>UI/UX</span><span>Figma</span><span>Mobile</span>
                       </>
-                    ) : (
+                    ) : id === 3 ?(
                       <>
                         <span>Python</span><span>Django</span><span>SQL</span>
+                      </>
+                    ) : (
+                      <>
+                       <span>React</span><span>Node.js</span><span>AWS</span>
                       </>
                     )}
                   </div>
@@ -114,25 +120,22 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="centered">
-              <Link to="/developers" className="btn btn-outline">View All Developers</Link>
-            </div>
           </div>
         </section>
 
         <section className="cta">
           <div className="container cta-inner">
             <div className="cta-text">
-              <h2>Ready to find your perfect team?</h2>
+              <h2>스터디/프로젝트에 참여하고 싶으신가요?</h2>
               <p>
-                Join Dyner today and connect with talented developers who can help bring your project to life.
+                여러분의 여정에 함께할 개발자를 Dyner에서 만나보세요. 목표를 향해 함께 달려갈 든든한 팀을 지금 바로 찾을 수 있어요.
               </p>
-              <Link to="/sign-up" className="btn btn-black">Get Started →</Link>
+              <Link to="/sign-up" className="btn btn-black cta-button">지금 시작하기 →</Link>
             </div>
             <div className="cta-card">
-              <h3>Join as a Developer</h3>
-              <p>Create your profile, showcase your skills, and get matched with exciting projects.</p>
-              <Link to="/sign-up?role=developer" className="btn btn-outline small">Create Developer Profile</Link>
+              <h3>가입하기</h3>
+              <p>프로필을 만들고, 당신의 역량을 보여주세요. 흥미로운 프로젝트/스터디를 추천받을 수 있어요.</p>
+              <Link to="/sign-up?role=developer" className="btn btn-outline small">내 프로필 만들러 가기</Link>
             </div>
           </div>
         </section>
@@ -142,7 +145,7 @@ export default function Home() {
         <div className="container footer-inner">
           <div className="footer-brand">
             <div className="logo">Dyner</div>
-            <p>Connecting talented developers with exciting projects since 2023.</p>
+            <p>2025년 한림대학교 창업동아리 Dyner가 제작하였습니다.</p>
           </div>
           <div className="footer-links">
   <div className="footer-column">
@@ -150,7 +153,7 @@ export default function Home() {
     <ul>
       <li><Link to="/projects">Projects</Link></li>
       <li><Link to="/developers">Developers</Link></li>
-      <li><Link to="/how-it-works">How It Works</Link></li>
+      <li><Link to="/study">Study</Link></li>
     </ul>
   </div>
   <div className="footer-column">
@@ -173,7 +176,7 @@ export default function Home() {
 
         </div>
         <div className="container footer-bottom">
-          <p>© 2023 Dyner. All rights reserved.</p>
+          <p>© 2025 Dyner. All rights reserved.</p>
           <div className="footer-policy">
             <Link to="#">Privacy Policy</Link>
             <Link to="#">Terms of Service</Link>
