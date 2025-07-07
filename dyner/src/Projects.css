@@ -1,0 +1,123 @@
+.projects-list {
+  min-height: 600px; /* 예: 한 페이지의 최소 세로 길이 */
+}
+
+.projects-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 10px;
+  padding-bottom: 0px;
+}
+
+.create-btn {
+  padding: 10px 16px;
+  font-weight: bold;
+}
+
+.projects-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.search-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-select {
+    width: 140px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.projects-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tab-btn {
+  padding: 10px 16px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: black;
+  color: white;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 24px;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.project-card .tags span {
+  display: inline-block;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 4px 4px 8px 0;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.page-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.projects-list {
+  min-height: 600px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  margin: auto;
+  padding: 60px 0;
+  color: #888;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.empty-state .btn {
+  font-size: 14px;
+}
