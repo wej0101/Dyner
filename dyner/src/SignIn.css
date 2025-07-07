@@ -1,0 +1,108 @@
+.sign-in-form-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+  .logo-img {
+    height: 48px; 
+    width: auto;
+    object-fit: contain;
+  }
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sign-in-form input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn.btn-green {
+  background-color: #00B270;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.btn.btn-green:hover {
+  background-color: #009A60; /* 약간 어두운 색상 */
+  transform: none;           /* 크기 변화 없도록 설정 */
+}
+
+.auth {
+  display: flex;          
+  flex-direction: row;    
+  align-items: center;     
+  gap: 10px;               
+}
+
+
+  .auth .btn {
+    margin-left: 10px;
+  }
+  
+.btn {
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1.2;         
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;   
+  height: 40px;             
+  display: flex;
+  align-items: center;      
+  justify-content: center;
+}
+
+  
+  .btn-black {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.btn-black:hover {
+  background: white;
+  color: black;
+}
+
+.btn-outline {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+
+.btn-outline:hover {
+  background: #00B270;
+  color: white;
+  border: 1px solid #00B270;
+}
